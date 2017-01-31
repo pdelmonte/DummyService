@@ -1,5 +1,6 @@
 package org.bts.android.dummyservice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.start_service:
                 Log.w(MainActivity.TAG, "Service Started");
+                Intent intent = new Intent(this, CustomStartedService.class);
+                startService(intent);
                 break;
 
             case R.id.start_bound_service:
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.start_intent_service:
                 Log.w(MainActivity.TAG, "IntentService Started");
+                Intent intent1 = new Intent(this, CustomIntentService.class);
+                startService(intent1);
                 break;
 
             default:
