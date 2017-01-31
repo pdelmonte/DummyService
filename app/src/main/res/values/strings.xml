@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">DummyService</string>
+    <string name="app_name">Service Manager</string>
+    <string name="text_serviced">Nothing to be shown yet</string>
+    <string name="text_field">Type something here...</string>
 </resources>
