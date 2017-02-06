@@ -23,6 +23,10 @@
         <service
             android:name=".CustomIntentService"
             android:exported="false" />
+        <service
+            android:name=".CustomBoundService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
